@@ -1,0 +1,289 @@
+500000
+500001
+500116
+500002
+500003
+500117
+500004
+500118
+500005
+500119
+500120
+500006
+500007
+500008
+500009
+500121
+500122
+500010
+500114
+500123
+500137
+500138
+500011
+500012
+500141
+500142
+500013
+500125
+500103
+500014
+500015
+500139
+500140
+500016
+500143
+500144
+500017
+500018
+500019
+500020
+500058
+500021
+500022
+500023
+500024
+500025
+500026
+500027
+500028
+500029
+500030
+500031
+500126
+500032
+500033
+500034
+500035
+500036
+500037
+500038
+500039
+500040
+500041
+500042
+500043
+500045
+500044
+500046
+500048
+500047
+500049
+500050
+500052
+500051
+500130
+500131
+500053
+500054
+500055
+500128
+500129
+500056
+500057
+500059
+500060
+500061
+500062
+500063
+500064
+500065
+500066
+500067
+500068
+500069
+500070
+500135
+500113
+500071
+500072
+500073
+500115
+500074
+500088
+500075
+500089
+500090
+500076
+500077
+500078
+500079
+500080
+500081
+500082
+500083
+500084
+500085
+500132
+500086
+500087
+500133
+500134
+500091
+500092
+500093
+500094
+500124
+500095
+500096
+500097
+500098
+500099
+500100
+500101
+500102
+500127
+500104
+500105
+500106
+500107
+500108
+500109
+500110
+500111
+500136
+500112	Alchemy
+Amulets
+Arena Season 1
+Arena Season 1
+Arena Season 2
+Arena Season 2
+Arena Season 3
+Arena Season 3
+Arena Season 4
+Arena Season 4
+Arena Season 5
+Arena Season 5 (Deadly Gladiator)
+Arena Season 5 (Hateful Gladiator)
+Arena Season 5 (Savage Gladiator)
+Arena Season 6
+Arena Season 6
+Arena Season 7
+Arena Season 7
+Arena Season 8
+Arena Season 8
+Armor Enchant Scrolls
+Armor Enchant Scrolls II
+Armor Tokens
+Bandages
+Belts
+Belts II
+Blacksmithing
+Blacksmithing II
+Blizzard Collectables
+Blue
+Boocks
+Boots
+Boots II
+Bows
+Bracers
+Bracers II
+Cloaks
+Cloth
+Commendations
+Containers
+Cooking
+Cooking
+Crafting
+Crossbows
+Currency
+Daggers
+Death Knight
+Druid
+Elemental
+Elixirs
+Enchanting
+Enchanting
+Enchanting II
+Engineering
+Epic Mount
+First Aid
+Fishing
+Fishing Poles
+Fist Weapons
+Flasks
+Flying Mounts
+Gems
+Green
+Guns
+Herbs
+Hierlooms
+Hierlooms
+Hunter
+Inscription
+Inscription
+Item Enhancements (Permanent)
+Item Enhancements (Temporary)
+Jewelcrafting
+Jewelcrafting
+Jewelcrafting II
+Jewelcrafting III
+Keys
+Leather
+Leatherworking
+Leatherworking II
+Leatherworking III
+Legendary
+Mage
+Meta
+Metal & Stone
+Mining
+Mounts
+Off-Hand
+One-Hand Axes
+One-Hand Maces
+One-Hand Swords
+Orange
+Paladin
+Pets
+Polearms
+Potions
+Priest
+Prismatic
+Projectiles
+Purple
+PvP Accessories
+Quivers
+Raid Tier 10
+Raid Tier 1
+Raid Tier 10.5 (Heroic)
+Raid Tier 10.5 (Heroic)
+Raid Tier 2
+Raid Tier 3
+Raid Tier 4
+Raid Tier 5
+Raid Tier 6
+Raid Tier 7
+Raid Tier 7.5
+Raid Tier 8
+Raid Tier 8.5
+Raid Tier 9 (Alliance)
+Raid Tier 9 (Horde)
+Raid Tier 9.5 (Alliance)
+Raid Tier 9.5 (Alliance-Heroic)
+Raid Tier 9.5 (Horde)
+Raid Tier 9.5 (Horde-Heroic)
+Reagents
+Red
+Relics
+Rings
+Rings II
+Rogue
+Scrolls
+Shaman
+Shields
+Shirts
+Staves
+Tabards
+Tailoring
+Tailoring II
+Thrown
+Trinkets
+Two-Handed Axes
+Two-Handed Maces
+Two-Handed Swords
+Wands
+Warlock
+Warrior
+Weapon Enchant Scrolls
+Yellow
