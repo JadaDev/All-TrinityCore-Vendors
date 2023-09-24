@@ -1,289 +1,145 @@
-500000
-500001
-500116
-500002
-500003
-500117
-500004
-500118
-500005
-500119
-500120
-500006
-500007
-500008
-500009
-500121
-500122
-500010
-500114
-500123
-500137
-500138
-500011
-500012
-500141
-500142
-500013
-500125
-500103
-500014
-500015
-500139
-500140
-500016
-500143
-500144
-500017
-500018
-500019
-500020
-500058
-500021
-500022
-500023
-500024
-500025
-500026
-500027
-500028
-500029
-500030
-500031
-500126
-500032
-500033
-500034
-500035
-500036
-500037
-500038
-500039
-500040
-500041
-500042
-500043
-500045
-500044
-500046
-500048
-500047
-500049
-500050
-500052
-500051
-500130
-500131
-500053
-500054
-500055
-500128
-500129
-500056
-500057
-500059
-500060
-500061
-500062
-500063
-500064
-500065
-500066
-500067
-500068
-500069
-500070
-500135
-500113
-500071
-500072
-500073
-500115
-500074
-500088
-500075
-500089
-500090
-500076
-500077
-500078
-500079
-500080
-500081
-500082
-500083
-500084
-500085
-500132
-500086
-500087
-500133
-500134
-500091
-500092
-500093
-500094
-500124
-500095
-500096
-500097
-500098
-500099
-500100
-500101
-500102
-500127
-500104
-500105
-500106
-500107
-500108
-500109
-500110
-500111
-500136
-500112	Alchemy
-Amulets
-Arena Season 1
-Arena Season 1
-Arena Season 2
-Arena Season 2
-Arena Season 3
-Arena Season 3
-Arena Season 4
-Arena Season 4
-Arena Season 5
-Arena Season 5 (Deadly Gladiator)
-Arena Season 5 (Hateful Gladiator)
-Arena Season 5 (Savage Gladiator)
-Arena Season 6
-Arena Season 6
-Arena Season 7
-Arena Season 7
-Arena Season 8
-Arena Season 8
-Armor Enchant Scrolls
-Armor Enchant Scrolls II
-Armor Tokens
-Bandages
-Belts
-Belts II
-Blacksmithing
-Blacksmithing II
-Blizzard Collectables
-Blue
-Boocks
-Boots
-Boots II
-Bows
-Bracers
-Bracers II
-Cloaks
-Cloth
-Commendations
-Containers
-Cooking
-Cooking
-Crafting
-Crossbows
-Currency
-Daggers
-Death Knight
-Druid
-Elemental
-Elixirs
-Enchanting
-Enchanting
-Enchanting II
-Engineering
-Epic Mount
-First Aid
-Fishing
-Fishing Poles
-Fist Weapons
-Flasks
-Flying Mounts
-Gems
-Green
-Guns
-Herbs
-Hierlooms
-Hierlooms
-Hunter
-Inscription
-Inscription
-Item Enhancements (Permanent)
-Item Enhancements (Temporary)
-Jewelcrafting
-Jewelcrafting
-Jewelcrafting II
-Jewelcrafting III
-Keys
-Leather
-Leatherworking
-Leatherworking II
-Leatherworking III
-Legendary
-Mage
-Meta
-Metal & Stone
-Mining
-Mounts
-Off-Hand
-One-Hand Axes
-One-Hand Maces
-One-Hand Swords
-Orange
-Paladin
-Pets
-Polearms
-Potions
-Priest
-Prismatic
-Projectiles
-Purple
-PvP Accessories
-Quivers
-Raid Tier 10
-Raid Tier 1
-Raid Tier 10.5 (Heroic)
-Raid Tier 10.5 (Heroic)
-Raid Tier 2
-Raid Tier 3
-Raid Tier 4
-Raid Tier 5
-Raid Tier 6
-Raid Tier 7
-Raid Tier 7.5
-Raid Tier 8
-Raid Tier 8.5
-Raid Tier 9 (Alliance)
-Raid Tier 9 (Horde)
-Raid Tier 9.5 (Alliance)
-Raid Tier 9.5 (Alliance-Heroic)
-Raid Tier 9.5 (Horde)
-Raid Tier 9.5 (Horde-Heroic)
-Reagents
-Red
-Relics
-Rings
-Rings II
-Rogue
-Scrolls
-Shaman
-Shields
-Shirts
-Staves
-Tabards
-Tailoring
-Tailoring II
-Thrown
-Trinkets
-Two-Handed Axes
-Two-Handed Maces
-Two-Handed Swords
-Wands
-Warlock
-Warrior
-Weapon Enchant Scrolls
-Yellow
+500000				=			Alchemy
+500001				=			Amulets
+500116				=			Arena Season 1
+500002				=			Arena Season 1
+500003				=			Arena Season 2
+500117				=			Arena Season 2
+500004				=			Arena Season 3
+500118				=			Arena Season 3
+500005				=			Arena Season 4
+500119				=			Arena Season 4
+500120				=			Arena Season 5
+500006				=			Arena Season 5 (Deadly Gladiator)
+500007				=			Arena Season 5 (Hateful Gladiator)
+500008				=			Arena Season 5 (Savage Gladiator)
+500009				=			Arena Season 6
+500121				=			Arena Season 6
+500122				=			Arena Season 7
+500010				=			Arena Season 7
+500114				=			Arena Season 8
+500123				=			Arena Season 8
+500137				=			Armor Enchant Scrolls
+500138				=			Armor Enchant Scrolls II
+500011				=			Armor Tokens
+500012				=			Bandages
+500141				=			Belts
+500142				=			Belts II
+500013				=			Blacksmithing
+500125				=			Blacksmithing II
+500103				=			Blizzard Collectables
+500014				=			Blue
+500015				=			Boocks
+500139				=			Boots
+500140				=			Boots II
+500016				=			Bows
+500143				=			Bracers
+500144				=			Bracers II
+500017				=			Cloaks
+500018				=			Cloth
+500019				=			Commendations
+500020				=			Containers
+500058				=			Cooking
+500021				=			Cooking
+500022				=			Crafting
+500023				=			Crossbows
+500024				=			Currency
+500025				=			Daggers
+500026				=			Death Knight
+500027				=			Druid
+500028				=			Elemental
+500029				=			Elixirs
+500030				=			Enchanting
+500031				=			Enchanting
+500126				=			Enchanting II
+500032				=			Engineering
+500033				=			Epic Mount
+500034				=			First Aid
+500035				=			Fishing
+500036				=			Fishing Poles
+500037				=			Fist Weapons
+500038				=			Flasks
+500039				=			Flying Mounts
+500040				=			Gems
+500041				=			Green
+500042				=			Guns
+500043				=			Herbs
+500045				=			Hierlooms
+500044				=			Hierlooms
+500046				=			Hunter
+500048				=			Inscription
+500047				=			Inscription
+500049				=			Item Enhancements (Permanent)
+500050				=			Item Enhancements (Temporary)
+500052				=			Jewelcrafting
+500051				=			Jewelcrafting
+500130				=			Jewelcrafting II
+500131				=			Jewelcrafting III
+500053				=			Keys
+500054				=			Leather
+500055				=			Leatherworking
+500128				=			Leatherworking II
+500129				=			Leatherworking III
+500056				=			Legendary
+500057				=			Mage
+500059				=			Meta
+500060				=			Metal & Stone
+500061				=			Mining
+500062				=			Mounts
+500063				=			Off-Hand
+500064				=			One-Hand Axes
+500065				=			One-Hand Maces
+500066				=			One-Hand Swords
+500067				=			Orange
+500068				=			Paladin
+500069				=			Pets
+500070				=			Polearms
+500135				=			Potions
+500113				=			Priest
+500071				=			Prismatic
+500072				=			Projectiles
+500073				=			Purple
+500115				=			PvP Accessories
+500074				=			Quivers
+500088				=			Raid Tier 10
+500075				=			Raid Tier 1
+500089				=			Raid Tier 10.5 (Heroic)
+500090				=			Raid Tier 10.5 (Heroic)
+500076				=			Raid Tier 2
+500077				=			Raid Tier 3
+500078				=			Raid Tier 4
+500079				=			Raid Tier 5
+500080				=			Raid Tier 6
+500081				=			Raid Tier 7
+500082				=			Raid Tier 7.5
+500083				=			Raid Tier 8
+500084				=			Raid Tier 8.5
+500085				=			Raid Tier 9 (Alliance)
+500132				=			Raid Tier 9 (Horde)
+500086				=			Raid Tier 9.5 (Alliance)
+500087				=			Raid Tier 9.5 (Alliance-Heroic)
+500133				=			Raid Tier 9.5 (Horde)
+500134				=			Raid Tier 9.5 (Horde-Heroic)
+500091				=			Reagents
+500092				=			Red
+500093				=			Relics
+500094				=			Rings
+500124				=			Rings II
+500095				=			Rogue
+500096				=			Scrolls
+500097				=			Shaman
+500098				=			Shields
+500099				=			Shirts
+500100				=			Staves
+500101				=			Tabards
+500102				=			Tailoring
+500127				=			Tailoring II
+500104				=			Thrown
+500105				=			Trinkets
+500106				=			Two-Handed Axes
+500107				=			Two-Handed Maces
+500108				=			Two-Handed Swords
+500109				=			Wands
+500110				=			Warlock
+500111				=			Warrior
+500136				=			Weapon Enchant Scrolls
+500112				=			Yellow
