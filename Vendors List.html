@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All WOTLK 3.3.5a Vendors</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+            min-height: 100vh;
+            padding: 2rem;
+            color: #e2e8f0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: rgba(15, 23, 42, 0.95);
+            border-radius: 24px;
+            padding: 3rem;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(148, 163, 184, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #f1f5f9;
+            margin-bottom: 3rem;
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(45deg, #3b82f6, #8b5cf6, #06b6d4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 4px 20px rgba(59, 130, 246, 0.3);
+        }
+
+        .search-controls {
+            margin-bottom: 3rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            align-items: center;
+        }
+
+        .search-box {
+            width: 100%;
+            max-width: 600px;
+            position: relative;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 1.25rem 1.75rem;
+            border: 2px solid #334155;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            background: rgba(30, 41, 59, 0.8);
+            color: #f1f5f9;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: #3b82f6;
+            box-shadow: 0 8px 30px rgba(59, 130, 246, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .search-input::placeholder {
+            color: #94a3b8;
+        }
+
+        .controls-row {
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .clear-btn, .sort-select {
+            padding: 0.75rem 1.5rem;
+            border: 2px solid #334155;
+            border-radius: 25px;
+            background: rgba(30, 41, 59, 0.8);
+            color: #f1f5f9;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .clear-btn:hover, .sort-select:hover {
+            border-color: #3b82f6;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.2);
+        }
+
+        .stats {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: rgba(30, 41, 59, 0.6);
+            border-radius: 16px;
+            border: 1px solid rgba(148, 163, 184, 0.1);
+        }
+
+        .stats-content {
+            font-size: 1.2rem;
+            color: #cbd5e1;
+        }
+
+        .stats strong {
+            color: #3b82f6;
+            font-size: 1.4rem;
+        }
+
+        .vendor-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .vendor-item {
+            background: linear-gradient(135deg, rgba(30, 41, 59, 0.8) 0%, rgba(51, 65, 85, 0.6) 100%);
+            border: 2px solid rgba(148, 163, 184, 0.1);
+            border-radius: 16px;
+            padding: 1.25rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .vendor-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #06b6d4);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .vendor-item:hover {
+            border-color: rgba(59, 130, 246, 0.4);
+            box-shadow: 0 8px 25px rgba(59, 130, 246, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .vendor-item:hover::before {
+            transform: scaleX(1);
+        }
+
+        .vendor-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .vendor-main-info {
+            flex: 1;
+        }
+
+        .vendor-name {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #f1f5f9;
+            margin-bottom: 0.25rem;
+            letter-spacing: 0.3px;
+        }
+
+        .vendor-id-display {
+            font-size: 0.85rem;
+            color: #94a3b8;
+            font-family: 'Courier New', monospace;
+            background: rgba(59, 130, 246, 0.1);
+            padding: 0.25rem 0.75rem;
+            border-radius: 8px;
+            display: inline-block;
+            border: 1px solid rgba(59, 130, 246, 0.2);
+        }
+
+        .vendor-actions {
+            display: flex;
+            align-items: center;
+        }
+
+        .copy-btn {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            color: white;
+            border: none;
+            padding: 0.6rem 1.2rem;
+            border-radius: 12px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.25);
+            min-width: 110px;
+            justify-content: center;
+        }
+
+        .copy-btn:hover {
+            background: linear-gradient(135deg, #1d4ed8, #1e40af);
+            transform: translateY(-1px);
+            box-shadow: 0 6px 20px rgba(59, 130, 246, 0.35);
+        }
+
+        .copy-btn.copied {
+            background: linear-gradient(135deg, #10b981, #059669);
+            animation: pulse 0.6s ease-out;
+        }
+
+        .copy-btn svg {
+            width: 16px;
+            height: 16px;
+        }
+
+        .vendor-description {
+            margin-top: 0.75rem;
+            padding-top: 0.75rem;
+            border-top: 1px solid rgba(148, 163, 184, 0.1);
+        }
+
+        .command-preview {
+            font-family: 'Courier New', monospace;
+            background: rgba(15, 23, 42, 0.6);
+            color: #06b6d4;
+            padding: 0.5rem 0.75rem;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            border: 1px solid rgba(6, 182, 212, 0.2);
+            margin-top: 0.25rem;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .toast {
+            position: fixed;
+            top: 30px;
+            right: 30px;
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: white;
+            padding: 1.25rem 2rem;
+            border-radius: 16px;
+            box-shadow: 0 15px 40px rgba(16, 185, 129, 0.3);
+            transform: translateX(400px);
+            transition: transform 0.3s ease;
+            z-index: 1000;
+            font-weight: 700;
+            font-size: 1rem;
+        }
+
+        .toast.show {
+            transform: translateX(0);
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 4rem 2rem;
+            color: #94a3b8;
+            font-size: 1.2rem;
+        }
+
+        .no-results-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            opacity: 0.5;
+        }
+
+        footer {
+            margin-top: 4rem;
+            text-align: center;
+            padding: 3rem 0;
+            color: #94a3b8;
+            background: rgba(15, 23, 42, 0.8);
+            border-radius: 20px;
+            border: 1px solid rgba(148, 163, 184, 0.1);
+        }
+
+        footer strong {
+            color: #f1f5f9;
+        }
+
+        footer a {
+            color: #3b82f6;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #06b6d4;
+        }
+
+        .footer-section {
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+
+            .container {
+                padding: 2rem;
+            }
+
+            h1 {
+                font-size: 2.2rem;
+            }
+
+            .vendor-header {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 1rem;
+            }
+
+            .vendor-actions {
+                align-items: stretch;
+            }
+
+            .copy-btn {
+                width: 100%;
+            }
+
+            .controls-row {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .clear-btn, .sort-select {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎮 All WOTLK 3.3.5a Vendors</h1>
+
+        <div class="search-controls">
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="🔍 Search vendors by name or ID..." id="searchInput" autofocus>
+            </div>
+            
+            <div class="controls-row">
+                <button class="clear-btn" id="clearSearchBtn">✨ Clear Search</button>
+                <select class="sort-select" id="sortSelect">
+                    <option value="name">📝 Sort by Name (A-Z)</option>
+                    <option value="id">🔢 Sort by ID (Ascending)</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="stats">
+            <div class="stats-content">
+                <strong id="totalCount">0</strong> vendors available • <strong id="visibleCount">0</strong> currently showing
+            </div>
+        </div>
+
+        <div class="vendor-list" id="vendorList">
+            <!-- Vendors will be populated by JavaScript -->
+        </div>
+
+        <div class="no-results" id="noResults" style="display: none;">
+            <div class="no-results-icon">🔍</div>
+            <div>No vendors found matching your search criteria</div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-section">
+            <strong>All WOTLK 3.3.5a Vendors - Website Generated by Claude AI & Polished by GPT 4.1</strong>
+        </div>
+        <div class="footer-section">
+            <a href="https://github.com/JadaDev/All-TrinityCore-Vendors/" target="_blank">📦 View the script on GitHub</a>
+        </div>
+        <div class="footer-section">
+            💬 Discord: <strong style="color:#10b981;">jadadev</strong>
+        </div>
+        <div class="footer-section">
+            📋 <strong>Installation:</strong> Run <span style="color:#3b82f6;">creatures.sql</span> & <span style="color:#3b82f6;">items.sql</span> on your <span style="color:#10b981;">world</span> database
+        </div>
+    </footer>
+
+    <div class="toast" id="toast">
+        <span id="toastMsg">✅ Command copied to clipboard!</span>
+    </div>
+
+    <script>
+        const vendors = [
+            { id: '500000', name: 'Alchemy' },
+            { id: '500001', name: 'Amulets' },
+            { id: '500116', name: 'Arena Season 1' },
+            { id: '500002', name: 'Arena Season 1' },
+            { id: '500003', name: 'Arena Season 2' },
+            { id: '500117', name: 'Arena Season 2' },
+            { id: '500004', name: 'Arena Season 3' },
+            { id: '500118', name: 'Arena Season 3' },
+            { id: '500005', name: 'Arena Season 4' },
+            { id: '500119', name: 'Arena Season 4' },
+            { id: '500120', name: 'Arena Season 5' },
+            { id: '500006', name: 'Arena Season 5 (Deadly Gladiator)' },
+            { id: '500007', name: 'Arena Season 5 (Hateful Gladiator)' },
+            { id: '500008', name: 'Arena Season 5 (Savage Gladiator)' },
+            { id: '500009', name: 'Arena Season 6' },
+            { id: '500121', name: 'Arena Season 6' },
+            { id: '500122', name: 'Arena Season 7' },
+            { id: '500010', name: 'Arena Season 7' },
+            { id: '500114', name: 'Arena Season 8' },
+            { id: '500123', name: 'Arena Season 8' },
+            { id: '500137', name: 'Armor Enchant Scrolls' },
+            { id: '500138', name: 'Armor Enchant Scrolls II' },
+            { id: '500011', name: 'Armor Tokens' },
+            { id: '500012', name: 'Bandages' },
+            { id: '500141', name: 'Belts' },
+            { id: '500142', name: 'Belts II' },
+            { id: '500013', name: 'Blacksmithing' },
+            { id: '500125', name: 'Blacksmithing II' },
+            { id: '500103', name: 'Blizzard Collectables' },
+            { id: '500014', name: 'Blue' },
+            { id: '500015', name: 'Boocks' },
+            { id: '500139', name: 'Boots' },
+            { id: '500140', name: 'Boots II' },
+            { id: '500016', name: 'Bows' },
+            { id: '500143', name: 'Bracers' },
+            { id: '500144', name: 'Bracers II' },
+            { id: '500017', name: 'Cloaks' },
+            { id: '500018', name: 'Cloth' },
+            { id: '500019', name: 'Commendations' },
+            { id: '500020', name: 'Containers' },
+            { id: '500058', name: 'Cooking' },
+            { id: '500021', name: 'Cooking' },
+            { id: '500022', name: 'Crafting' },
+            { id: '500023', name: 'Crossbows' },
+            { id: '500024', name: 'Currency' },
+            { id: '500025', name: 'Daggers' },
+            { id: '500026', name: 'Death Knight' },
+            { id: '500027', name: 'Druid' },
+            { id: '500028', name: 'Elemental' },
+            { id: '500029', name: 'Elixirs' },
+            { id: '500030', name: 'Enchanting' },
+            { id: '500031', name: 'Enchanting' },
+            { id: '500126', name: 'Enchanting II' },
+            { id: '500032', name: 'Engineering' },
+            { id: '500033', name: 'Epic Mount' },
+            { id: '500034', name: 'First Aid' },
+            { id: '500035', name: 'Fishing' },
+            { id: '500036', name: 'Fishing Poles' },
+            { id: '500037', name: 'Fist Weapons' },
+            { id: '500038', name: 'Flasks' },
+            { id: '500039', name: 'Flying Mounts' },
+            { id: '500040', name: 'Gems' },
+            { id: '500041', name: 'Green' },
+            { id: '500042', name: 'Guns' },
+            { id: '500043', name: 'Herbs' },
+            { id: '500045', name: 'Hierlooms' },
+            { id: '500044', name: 'Hierlooms' },
+            { id: '500046', name: 'Hunter' },
+            { id: '500048', name: 'Inscription' },
+            { id: '500047', name: 'Inscription' },
+            { id: '500049', name: 'Item Enhancements (Permanent)' },
+            { id: '500050', name: 'Item Enhancements (Temporary)' },
+            { id: '500052', name: 'Jewelcrafting' },
+            { id: '500051', name: 'Jewelcrafting' },
+            { id: '500130', name: 'Jewelcrafting II' },
+            { id: '500131', name: 'Jewelcrafting III' },
+            { id: '500053', name: 'Keys' },
+            { id: '500054', name: 'Leather' },
+            { id: '500055', name: 'Leatherworking' },
+            { id: '500128', name: 'Leatherworking II' },
+            { id: '500129', name: 'Leatherworking III' },
+            { id: '500056', name: 'Legendary' },
+            { id: '500057', name: 'Mage' },
+            { id: '500059', name: 'Meta' },
+            { id: '500060', name: 'Metal & Stone' },
+            { id: '500061', name: 'Mining' },
+            { id: '500062', name: 'Mounts' },
+            { id: '500063', name: 'Off-Hand' },
+            { id: '500064', name: 'One-Hand Axes' },
+            { id: '500065', name: 'One-Hand Maces' },
+            { id: '500066', name: 'One-Hand Swords' },
+            { id: '500067', name: 'Orange' },
+            { id: '500068', name: 'Paladin' },
+            { id: '500069', name: 'Pets' },
+            { id: '500070', name: 'Polearms' },
+            { id: '500135', name: 'Potions' },
+            { id: '500113', name: 'Priest' },
+            { id: '500071', name: 'Prismatic' },
+            { id: '500072', name: 'Projectiles' },
+            { id: '500073', name: 'Purple' },
+            { id: '500115', name: 'PvP Accessories' },
+            { id: '500074', name: 'Quivers' },
+            { id: '500088', name: 'Raid Tier 10' },
+            { id: '500075', name: 'Raid Tier 1' },
+            { id: '500089', name: 'Raid Tier 10.5 (Heroic)' },
+            { id: '500090', name: 'Raid Tier 10.5 (Heroic)' },
+            { id: '500076', name: 'Raid Tier 2' },
+            { id: '500077', name: 'Raid Tier 3' },
+            { id: '500078', name: 'Raid Tier 4' },
+            { id: '500079', name: 'Raid Tier 5' },
+            { id: '500080', name: 'Raid Tier 6' },
+            { id: '500081', name: 'Raid Tier 7' },
+            { id: '500082', name: 'Raid Tier 7.5' },
+            { id: '500083', name: 'Raid Tier 8' },
+            { id: '500084', name: 'Raid Tier 8.5' },
+            { id: '500085', name: 'Raid Tier 9 (Alliance)' },
+            { id: '500132', name: 'Raid Tier 9 (Horde)' },
+            { id: '500086', name: 'Raid Tier 9.5 (Alliance)' },
+            { id: '500087', name: 'Raid Tier 9.5 (Alliance-Heroic)' },
+            { id: '500133', name: 'Raid Tier 9.5 (Horde)' },
+            { id: '500134', name: 'Raid Tier 9.5 (Horde-Heroic)' },
+            { id: '500091', name: 'Reagents' },
+            { id: '500092', name: 'Red' },
+            { id: '500093', name: 'Relics' },
+            { id: '500094', name: 'Rings' },
+            { id: '500124', name: 'Rings II' },
+            { id: '500095', name: 'Rogue' },
+            { id: '500096', name: 'Scrolls' },
+            { id: '500097', name: 'Shaman' },
+            { id: '500098', name: 'Shields' },
+            { id: '500099', name: 'Shirts' },
+            { id: '500100', name: 'Staves' },
+            { id: '500101', name: 'Tabards' },
+            { id: '500102', name: 'Tailoring' },
+            { id: '500127', name: 'Tailoring II' },
+            { id: '500104', name: 'Thrown' },
+            { id: '500105', name: 'Trinkets' },
+            { id: '500106', name: 'Two-Handed Axes' },
+            { id: '500107', name: 'Two-Handed Maces' },
+            { id: '500108', name: 'Two-Handed Swords' },
+            { id: '500109', name: 'Wands' },
+            { id: '500110', name: 'Warlock' },
+            { id: '500111', name: 'Warrior' },
+            { id: '500136', name: 'Weapon Enchant Scrolls' },
+            { id: '500112', name: 'Yellow' }
+        ];
+
+        let filteredVendors = [...vendors];
+        let currentSort = 'name';
+
+        function createVendorElement(vendor) {
+            return `
+                <div class="vendor-item">
+                    <div class="vendor-header">
+                        <div class="vendor-main-info">
+                            <div class="vendor-name">${vendor.name}</div>
+                            <div class="vendor-id-display">ID: ${vendor.id}</div>
+                        </div>
+                        <div class="vendor-actions">
+                            <button class="copy-btn" onclick="copyCommand('${vendor.id}', this)">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                    <path d="m5 15-4-4 4-4"></path>
+                                    <path d="M11 6H6a2 2 0 0 0-2 2v8"></path>
+                                </svg>
+                                Copy Command
+                            </button>
+                        </div>
+                    </div>
+                    <div class="vendor-description">
+                        <div class="command-preview">.npc add ${vendor.id}</div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderVendors() {
+            const vendorList = document.getElementById('vendorList');
+            const noResults = document.getElementById('noResults');
+            
+            if (filteredVendors.length === 0) {
+                vendorList.style.display = 'none';
+                noResults.style.display = 'block';
+            } else {
+                vendorList.style.display = 'flex';
+                noResults.style.display = 'none';
+                vendorList.innerHTML = filteredVendors.map(createVendorElement).join('');
+            }
+            
+            animateCount('totalCount', vendors.length);
+            animateCount('visibleCount', filteredVendors.length);
+        }
+
+        function copyCommand(id, button) {
+            const command = `.npc add ${id}`;
+            navigator.clipboard.writeText(command).then(() => {
+                showToast('✅ Command copied to clipboard!');
+                
+                button.classList.add('copied');
+                const originalContent = button.innerHTML;
+                button.innerHTML = `
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="20,6 9,17 4,12"></polyline>
+                    </svg>
+                    Copied!
+                `;
+                
+                setTimeout(() => {
+                    button.classList.remove('copied');
+                    button.innerHTML = originalContent;
+                }, 2000);
+            }).catch(() => {
+                showToast('❌ Failed to copy to clipboard');
+            });
+        }
+
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            const toastMsg = document.getElementById('toastMsg');
+            toastMsg.textContent = message;
+            toast.classList.add('show');
+            setTimeout(() => toast.classList.remove('show'), 3000);
+        }
+
+        function filterVendors(searchTerm) {
+            const term = searchTerm.toLowerCase();
+            filteredVendors = vendors.filter(vendor => 
+                vendor.name.toLowerCase().includes(term) ||
+                vendor.id.includes(term)
+            );
+            sortVendors();
+            renderVendors();
+        }
+
+        function sortVendors() {
+            if (currentSort === 'name') {
+                filteredVendors.sort((a, b) => a.name.localeCompare(b.name));
+            } else {
+                filteredVendors.sort((a, b) => parseInt(a.id) - parseInt(b.id));
+            }
+        }
+
+        function animateCount(id, target) {
+            const el = document.getElementById(id);
+            let start = parseInt(el.textContent) || 0;
+            const duration = 600;
+            const startTime = performance.now();
+            
+            function update(now) {
+                const progress = Math.min((now - startTime) / duration, 1);
+                const easeOut = 1 - Math.pow(1 - progress, 3);
+                el.textContent = Math.floor(start + (target - start) * easeOut);
+                if (progress < 1) {
+                    requestAnimationFrame(update);
+                } else {
+                    el.textContent = target;
+                }
+            }
+            requestAnimationFrame(update);
+        }
+
+        // Event listeners
+        document.getElementById('searchInput').addEventListener('input', (e) => {
+            filterVendors(e.target.value);
+        });
+
+        document.getElementById('clearSearchBtn').addEventListener('click', () => {
+            document.getElementById('searchInput').value = '';
+            filterVendors('');
+            document.getElementById('searchInput').focus();
+        });
+
+        document.getElementById('sortSelect').addEventListener('change', (e) => {
+            currentSort = e.target.value;
+            sortVendors();
+            renderVendors();
+        });
+
+        // Initialize
+        sortVendors();
+        renderVendors();
+    </script>
+</body>
+</html>
